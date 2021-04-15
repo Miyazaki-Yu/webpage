@@ -280,7 +280,10 @@ footer {
 	#main ul{
 		margin-left: 20px
 	}
-	
+	footer{
+		border-top: solid 1px;
+		padding-top: 10px;
+	}
 
 	#navi_SP {
 		position: relative;
