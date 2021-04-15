@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>ベイズ統計の基礎</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="リンク">
+		<meta name="keywords" content="宮崎,優">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="../js/main.js" charset="utf-8"></script> -->
+		<link rel="stylesheet" href="../css/main.css">		
+		<link rel="stylesheet" href="../css/notes.css">	
+		<script>
+			MathJax = {
+			  chtml: {
+			    matchFontHeight: false
+			  }
+			};
+		</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>			
+		
+	</head>
+	<body>
+
+		<div id="wrapper">
+
+			<header>
+
+				<h1><a href="index.html">宮崎優のWebページ</a></h1>
+				
+			
+			</header>
+
+			<div id="contents">
+
+				<div id="main">
+					<h2>ベイズ統計の基礎</h2>
+					<p>ベイズ統計は使うこと以上に解釈が難しく、教科書によって書いてあることはバラバラで、互いに矛盾しているといったことも珍しくないというのが実際だと思います。例えば以下に示すような疑問点に対して論理的に明快に答えてくれる本は私の知る限りでは[1]だけです。私も化学工学科にいた頃はベイズ統計を使った研究をしており、たまに質問されたりした折にはこの教科書に沿った説明をしていましたが、実際に興味を持ってもらえる確率は非常に低かったです。確かに化学などの数学や統計に馴染みが薄い分野の人にとってはやや数学的なように見えてとっつきにくいのかもしれません。</p>
+					<p>聞かれるたびに説明するのは面倒だし、Webサイトを開設してまもなくコンテンツも少ないので、主に私が初めて勉強したときに疑問に思ったこれらの項目に答えられるように簡単な例を使って説明したいと思います。</p>
+					<ul>
+						<li>そもそもベイズ統計とは何か?</li>
+						<li>ベイズ推定の特性</li>
+						<li>事前分布や尤度とは?</li>
+						<li>事前分布を使うことの是非</li>
+						<li>事前分布は主観で決めて良いのか?</li>
+						<li>ベイズ統計におけるベイズの定理の立ち位置</li>
+						<li>汎化誤差と対数周辺尤度(ベイズ自由エネルギー)</li>
+						<li>情報量基準(AIC、BICなど)のベイズ統計的な解釈</li>
+					</ul>
+					<h3>参考文献</h3>
+					<p>[1] 渡辺澄夫「ベイズ統計の理論と方法」コロナ社 (2012)</p>
+					<h3>目次</h3>
+					<ol>
+						<li><a href="bayes01.html">機械学習とは</a></li>
+						<li><a href="bayes02.html">ベイズ統計の基本的なフレームワーク</a></li>
+						<li><a href="bayes03.html">なぜベイズ統計なのか</a></li>
+						<li><a href="bayes04.html">ベイズの定理は本当に成立しているか</a></li>
+						<li><a href="bayes05.html">推定の「良さ」とは</a></li>
+						<li><a href="bayes06.html">どのように「良さ」を計算するのか</a></li>
+					</ol>
+				</div>
+				<!--/#main-->
+
+				<!--/#sub-->
+
+			</div>
+			<!--/#contents-->
+
+		</div>
+		<!--/#container-->
+		<footer>
+			<small><a href="../sitemap.html">サイトマップ</a><br>この分野の専門家ではないので、もしコメント等ありましたら<a href="../about.html">ご連絡</a>ください</small>
+		</footer>
+
+	</body>
+</html>

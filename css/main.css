@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/*---------------------------------
+
+	PCとスマホに共通の設定
+
+---------------------------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #777;	/*フォントカラー*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 16px;	/*フォントサイズ*/
+	line-height: 2;		/*行間*/
+	-webkit-text-size-adjust: none;
+}
+
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {
+	color: #777;		
+	transition: 0.4s;	
+}
+a:hover {
+	color: #709144;			
+	text-decoration: none;	
+}
+
+/*---------------------------------
+
+	header関連
+
+---------------------------------*/
+
+header h1{
+	color: white;
+	text-align: center;
+	height: 40px;
+	background-color: #9fbd77;
+
+}
+header h1 a{
+	
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 200%;
+}
+header h1 a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*---------------------------------
+
+	footer関連
+
+---------------------------------*/
+
+footer {
+	clear: both;
+	/*text-align: center;*/
+	padding-bottom: 20px;
+	margin: 20px;
+}
+
+/*---------------------------------
+ 	サイトの構造
+	<body>
+		<div id="wrapper">
+			<header>
+				<!--smartphone navi（800px以下）-->
+				<nav id="navi_SP"></nav>
+				<!-- smartphone navi -->
+				<h1></h1>		
+			</header>
+
+			<div id="contents">
+				<div id="main">
+					メインコンテンツ
+				</div>
+				<div id="sub">
+					<!--PC navi（801px以上）-->
+					<nav id="navi_PC"></nav>
+					<!-- PC navi -->
+				</div>
+				<!--/#sub-->
+
+			</div>
+			<!--/#contents-->
+
+		</div>
+		<!--/#wrapper-->
+		<footer></footer>
+	</body> 	
+
+	#wrapper: footer以外のサイト全体を囲む(body直下)
+	#header: h1 スマホメニュー
+ 	#contents: #main #subを囲む
+ 	#main: メインのコンテンツ
+ 	#sub: PCメニュー
+
+---------------------------------*/
+
+#wrapper {
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 30px auto 0;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);	
+	/*border-radius: 30px;*/
+	padding: 40px;		
+	background: #fff;	
+}
+
+#contents {
+	padding: 40px 0;	
+}
+
+
+/*---------------------------------
+
+	#main関連
+
+---------------------------------*/
+
+#main {
+	overflow: hidden;
+	float: right;		
+	width: 70%;			
+}
+
+#main h2 {
+	clear: both;
+	margin-bottom: 20px;	
+	color: #777;			
+	padding: 10px 20px 10px 20px;
+	border-bottom: solid 1px #9fbd77;
+	font-size: 120%;
+}
+
+#main h3 {
+	clear: both;
+	margin-bottom: 20px;	
+	color: #333;			
+	padding: 5px 20px;	
+	font-size: 110%;
+}
+
+#main p {
+	padding: 0 20px 20px;	
+}
+
+/*字下げ*/
+#main p + p {
+	margin-top: -10px;
+}
+#main h2 + p,
+#main h3 + p {
+	margin-top: -7px;
+}
+/*sectionの間隔*/
+#main section + section {
+	clear: both;
+	padding-top: 30px;
+}
+
+/*---------------------------------
+
+	#sub関連
+
+---------------------------------*/
+
+#sub {
+	float: left;		
+	width: 25%;			
+	text-align: center;	
+}
+
+#sub h2 {
+	background: #8c8c8c;	
+	background: linear-gradient(#cbcbcb, #949494 49%, #8c8c8c 50%);	/*背景グラデーション*/
+	
+	padding: 10px;	
+	color: #fff;	
+}
+
+/*---------------------------------
+
+	#navi_PC: PCメニュー
+
+---------------------------------*/
+
+#navi_PC ul {
+	list-style-type: none;
+}
+/*---------------------------------
+
+	#navi_SP: スマホメニュー
+
+---------------------------------*/
+
+#navi_SP ul {
+	list-style-type: none;
+}
+
+/*---------------------------------
+
+	メディアクエリ
+
+---------------------------------*/
+
+
+@media screen and (max-width:1350px){
+
+	#wrapper {
+		margin: 20px 3%;
+	}
+
+}
+
+
+@media screen and (min-width: 801px){
+
+
+	#main dl{
+		margin-left: 40px
+	}
+
+	#main ul{
+		margin-left: 40px
+	}
+
+	#navi_PC {
+		margin-bottom: 20px;
+		border-right: 1px solid #ccc;	
+		border-left: 1px solid #ccc;	
+	}
+
+	#navi_PC li a {
+		text-decoration: none;
+		display: block;
+		padding: 10px;	
+		border-bottom: 1px solid #ccc;	
+	}
+
+	/*スマホ用メニューを表示させない*/
+	#navi_SP {display: none;}	
+}
+
+@media screen and (max-width: 800px){
+
+	#wrapper {
+		box-shadow: none;
+		padding: 30px 30px 0;
+	}
+
+	#contents {
+		padding: 30px 0;
+	}
+
+	#main {
+		float: none;
+		width: auto;
+	}
+
+	#sub {
+		float: none;
+		width: auto;
+	}
+
+	#main dl{
+		margin-left: 20px
+	}
+
+	#main ul{
+		margin-left: 20px
+	}
+	
+
+	#navi_SP {
+		position: relative;
+		width: 100%;
+	}
+	.navi_SP_unshown{
+		display: none;
+	}
+	#navi_SP_open span{
+		position: absolute;
+		display: block;
+		content: '';
+		cursor: pointer;
+	}
+	#navi_SP_open span img{
+		height: 40px;
+		background-color: #9fbd77; 
+	}
+	#navi_SP_close {
+	  	display: none;/*はじめは隠しておく*/
+	  	position: fixed;
+	  	z-index: 99;
+	  	top: 0;/*全体に広がるように*/
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+	  	background: black;
+	  	opacity: 0;
+	  	transition: .3s ease-in-out;
+	}
+	#navi_SP_content {
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;/*最前面に*/
+		width: 70%;/*右側に隙間を作る（閉じるカバーを表示）*/
+		max-width: 330px;/*最大幅（調整してください）*/
+		height: 100%;
+		background: #fff;/*背景色*/
+		transition: .3s ease-in-out;/*滑らかに表示*/
+		-webkit-transform: translateX(-105%);
+		transform: translateX(-105%);/*左に隠しておく*/
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	#navi_SP_content ul li {
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	#navi_SP_input:checked ~ #navi_SP_close{
+		display: block;/*カバーを表示*/
+		opacity: .5;
+	}
+	#navi_SP_input:checked ~ #navi_SP_content{
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);/*中身を表示（右へスライド）*/
+		box-shadow: 6px 0 25px rgba(0,0,0,.15);
+	}
+	#navi_SP li a{
+		display: block;
+		border-bottom: 1px solid #ccc;
+		text-indent: 10px
+	}
+	/*PC用メニューを非表示にする*/
+	#navi_PC {display: none;}
+}
+@media screen and (max-width:480px){
+
+	body {
+		font-size: 11px;	
+		background: #fff;	
+	}
+
+	#wrapper {
+		margin: 0;border-radius: 0px;
+		padding: 30px 30px 0;	
+		line-height: 1.5;	
+	}
+
+	#contents {
+		padding: 30px 0;	
+	}
+
+	#main h2 {
+		font-size: 14px;	
+		padding-left: 20px;	
+	}
+	
+	#main h3 {
+		font-size: 13px;	
+	}
+
+	header h1 a{
+		font-size: 15px;
+		line-height: 300%;
+	}
+	footer{
+		border-top: solid 1px;
+		padding-top: 10px;
+	}
+	footer small{
+		font-size: 80%;
+	}
+
+}
+@media screen and (max-width:300px){
+	header h1 a{
+		display: none;
+	}
+
+}
