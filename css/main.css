@@ -360,7 +360,7 @@ footer {
 @media screen and (max-width:480px){
 
 	body {
-		font-size: 20px;	
+		font-size: 13px;	
 		background: #fff;	
 	}
 
@@ -375,12 +375,12 @@ footer {
 	}
 
 	#main h2 {
-		font-size: 14px;	
+		font-size: 16px;	
 		padding-left: 20px;	
 	}
 	
 	#main h3 {
-		font-size: 13px;	
+		font-size: 15px;	
 	}
 
 	header h1 a{
