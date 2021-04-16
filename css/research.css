@@ -8,11 +8,14 @@
 }
 #main h3{
 	margin-top: 20px;
+	margin-bottom: 10px;
 	text-decoration: underline;
 }
 
-#main h4{
-	margin-left: 20px;
+#main .ref{
+	margin-top: -20px;
+	text-align: right;
+	margin-right: 30px;
 }
 
 #main .bold{
@@ -31,6 +34,15 @@
 #main dl dd{
 	width: 80%;
 }
+#main .fig_wrapper{
+	text-align: center;
+	color: #333;
+}
+#main .fig{
+	width: 80%;
+	height: auto;
+}
+
 @media screen and (max-width: 480px){
 	#main dl dt{
 		width: 30%;
