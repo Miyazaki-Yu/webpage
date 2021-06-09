@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #main{
-	float: none;
+	/*float: none;*/
 	width: 100%;
 }
 #main ol{
