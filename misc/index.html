@@ -3,16 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>宮崎優のWebサイト</title>
+		<title>ノート</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="宮崎優のWebサイトです。">
+		<meta name="description" content="雑記">
 		<meta name="keywords" content="宮崎,優">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/webpage/js/main.js" charset="utf-8"></script>
-		<link rel="stylesheet" href="/webpage/css/main.css">		
-		<link rel="stylesheet" href="/webpage/css/index.css">	
+		<link rel="stylesheet" href="/webpage/css/main.css">
+		<link rel="stylesheet" href="/webpage/css/notes.css">
+		<script>
+			MathJax = {
+			  chtml: {
+			    matchFontHeight: false
+			  }
+			};
+		</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>					
 	</head>
-
 	<body>
 
 		<div id="wrapper">
@@ -36,22 +43,19 @@
 			<div id="contents">
 
 				<div id="main">
+					
+					<section id="note_list">
+						<h2>雑記</h2>
+						<p>ブログ代わりの雑記です。著者の性格上頻繁に更新されることはまずないと思いますが、ご興味があれば読んでいただけると幸いです。</p>
+						<h3><a href="./bookreview">勉強していて参考になった本(2022/1/3更新)</a></h3>
 
-					<section id="news">
-						<h2>更新</h2>
+						
+						
 
-						<dl>
-							<dt>2022/4/5</dt>
-							<dd><a href="/webpage/publication.html#paper">トポロジカルディラック半金属のナノワイヤにおいて表面状態に由来する量子振動を実験的に観測した論文をPhysical Review Research誌から出版しました。</a></dd>
-							<dt>2022/3/5</dt>
-							<dd><a href="/webpage/publication.html#presentation_for">APS March Meeting 2022で発表しました</a></dd>	
-							<dt>2021/09/21</dt>
-							<dd><a href="/webpage/publication.html#presentation_dom">日本物理学会2021年秋季大会で発表しました。</a></dd>	
-							<dt>2021/04/16</dt>
-							<dd>webページ立ち上げ</dd>	
-						</dl>
+						
+						
 					</section>
-
+					
 				</div>
 				<!--/#main-->
 
@@ -59,7 +63,8 @@
 
 					<!--PC navi（801px以上）-->
 					<nav id="navi_PC">
-						
+						<h2>Contents</h2>
+							
 					</nav>
 					<!-- PC navi -->
 
@@ -75,7 +80,6 @@
 		<footer>
 			<small><a href="/webpage/sitemap.html">サイトマップ</a><br>メニューの表示にJavascriptを用いているので環境次第ではメニューが表示されない場合があります。<br>その場合はサイトマップから所望のページへ移動できます。</small>
 		</footer>
-
 
 	</body>
 </html>
