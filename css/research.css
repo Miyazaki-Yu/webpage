@@ -39,11 +39,22 @@
 #main dl dd{
 	width: 80%;
 }
+
 #main .fig_wrapper{
 	text-align: center;
 	color: #333;
 }
+
 #main .fig{
+	width: 80%;
+	height: auto;
+}
+
+#main .movie_wrapper{
+	text-align: center;
+	color: #333;
+}
+#main .movie{
 	width: 80%;
 	height: auto;
 }
