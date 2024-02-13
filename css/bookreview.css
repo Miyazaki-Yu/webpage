@@ -1,0 +1,16 @@
+@charset "utf-8";
+#main h3{
+	margin-top: 20px;
+}
+
+#main h4{
+	font-size: 120%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#main h5{
+	margin-left: 20px;
+	margin-top: 10px;
+	/* font-weight: bold; */
+}
