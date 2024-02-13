@@ -1,16 +1,19 @@
 @charset "utf-8";
 #main h3{
 	margin-top: 20px;
+    border-bottom: solid 1px #777;
 }
 
 #main h4{
 	font-size: 120%;
 	margin-top: 20px;
 	margin-left: 20px;
+    font-weight: bold;
 }
 
 #main h5{
 	margin-left: 20px;
 	margin-top: 10px;
+    border-bottom: solid 1px #777;
 	/* font-weight: bold; */
 }
